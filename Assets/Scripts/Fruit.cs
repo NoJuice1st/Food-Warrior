@@ -8,7 +8,7 @@ public class Fruit : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         rb.velocity = new Vector2(0, Random.Range(10, 15));
-        rb.angularVelocity = Random.Range(-100, 100);
+        rb.angularVelocity = Random.Range(-200, 200);
     }
 
     private void Update()
