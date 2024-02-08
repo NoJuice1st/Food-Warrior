@@ -5378,73 +5378,89 @@ MonoBehaviour:
   bomb: {fileID: 3050227461260354291, guid: 65e4bb0566602f848b00d2e61b0c21c7, type: 3}
   fruit: {fileID: 3024740914127228026, guid: b7b00c8837ec4474a8058f4af0da57cf, type: 3}
   spawnRate: 1
-  bombChance: 20
---- !u!1001 &1732824758
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 831635301558485122, guid: 65e4bb0566602f848b00d2e61b0c21c7, type: 3}
-      propertyPath: m_Name
-      value: Fuse Particles
-      objectReference: {fileID: 0}
-    - target: {fileID: 3050227461260354291, guid: 65e4bb0566602f848b00d2e61b0c21c7, type: 3}
-      propertyPath: m_Name
-      value: Bomb
-      objectReference: {fileID: 0}
-    - target: {fileID: 3750978416049480036, guid: 65e4bb0566602f848b00d2e61b0c21c7, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 3.750003
-      objectReference: {fileID: 0}
-    - target: {fileID: 3750978416049480036, guid: 65e4bb0566602f848b00d2e61b0c21c7, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.62500036
-      objectReference: {fileID: 0}
-    - target: {fileID: 3750978416049480036, guid: 65e4bb0566602f848b00d2e61b0c21c7, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -1.622819
-      objectReference: {fileID: 0}
-    - target: {fileID: 3750978416049480036, guid: 65e4bb0566602f848b00d2e61b0c21c7, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3750978416049480036, guid: 65e4bb0566602f848b00d2e61b0c21c7, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3750978416049480036, guid: 65e4bb0566602f848b00d2e61b0c21c7, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3750978416049480036, guid: 65e4bb0566602f848b00d2e61b0c21c7, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3750978416049480036, guid: 65e4bb0566602f848b00d2e61b0c21c7, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3750978416049480036, guid: 65e4bb0566602f848b00d2e61b0c21c7, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3750978416049480036, guid: 65e4bb0566602f848b00d2e61b0c21c7, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7608102921701790403, guid: 65e4bb0566602f848b00d2e61b0c21c7, type: 3}
-      propertyPath: InitialModule.gravityModifier.scalar
-      value: 0.1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 6540311834974710124, guid: 65e4bb0566602f848b00d2e61b0c21c7, type: 3}
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 65e4bb0566602f848b00d2e61b0c21c7, type: 3}
+  bombChance: 10
+  waves:
+  - items:
+    - delay: 0
+      isBomb: 0
+      x: 0
+      velocity: {x: 0, y: 10}
+      isRandomPos: 0
+      isRandomBomb: 0
+      isRandomVelocity: 0
+  - items:
+    - delay: 0
+      isBomb: 1
+      x: 0
+      velocity: {x: 0, y: 10}
+      isRandomPos: 0
+      isRandomBomb: 0
+      isRandomVelocity: 0
+  - items:
+    - delay: 0
+      isBomb: 1
+      x: 5
+      velocity: {x: 2, y: 10}
+      isRandomPos: 0
+      isRandomBomb: 0
+      isRandomVelocity: 0
+    - delay: 0
+      isBomb: 0
+      x: 0
+      velocity: {x: 3, y: 10}
+      isRandomPos: 0
+      isRandomBomb: 0
+      isRandomVelocity: 0
+  - items:
+    - delay: 0.5
+      isBomb: 0
+      x: 0
+      velocity: {x: 3, y: 10}
+      isRandomPos: 1
+      isRandomBomb: 1
+      isRandomVelocity: 1
+    - delay: 0.5
+      isBomb: 0
+      x: 0
+      velocity: {x: 3, y: 10}
+      isRandomPos: 1
+      isRandomBomb: 1
+      isRandomVelocity: 1
+    - delay: 0.5
+      isBomb: 0
+      x: 0
+      velocity: {x: 3, y: 10}
+      isRandomPos: 1
+      isRandomBomb: 1
+      isRandomVelocity: 1
+    - delay: 0.5
+      isBomb: 0
+      x: 0
+      velocity: {x: 3, y: 10}
+      isRandomPos: 1
+      isRandomBomb: 1
+      isRandomVelocity: 1
+    - delay: 0.5
+      isBomb: 0
+      x: 0
+      velocity: {x: 3, y: 10}
+      isRandomPos: 1
+      isRandomBomb: 1
+      isRandomVelocity: 1
+    - delay: 0.5
+      isBomb: 0
+      x: 0
+      velocity: {x: 3, y: 10}
+      isRandomPos: 1
+      isRandomBomb: 1
+      isRandomVelocity: 1
+    - delay: 0.5
+      isBomb: 0
+      x: 0
+      velocity: {x: 3, y: 10}
+      isRandomPos: 1
+      isRandomBomb: 1
+      isRandomVelocity: 1
 --- !u!1 &2019056200
 GameObject:
   m_ObjectHideFlags: 0
@@ -5546,4 +5562,3 @@ SceneRoots:
   - {fileID: 885723308}
   - {fileID: 1020042256}
   - {fileID: 1387904908}
-  - {fileID: 1732824758}
