@@ -21,12 +21,6 @@ public class Spawner : MonoBehaviour
             {
                 // Rand Checks
 
-                if (item.isRandomBomb)
-                {
-                    item.isBomb = Random.Range(0, 100) > bombChance ? true : false;
-                    print(item.isBomb);
-                }
-
                 if (item.isRandomPos)
                 {
                     var randomPosX = Random.Range(Camera.main.ViewportToWorldPoint(Vector3.zero).x + 1, Camera.main.ViewportToWorldPoint(Vector3.one).x) - 1;
@@ -36,15 +30,7 @@ public class Spawner : MonoBehaviour
                 if (item.isRandomVelocity)
                 {
                     float yVelocity = Random.Range(8f, 12f);
-                    float xVelocity;
-                    if (item.x >= 0)
-                    {
-                        xVelocity = Random.Range(-5f, 0f);
-                    }
-                    else
-                    {
-                        xVelocity = Random.Range(0f, 5f);
-                    }
+                    float xVelocity = item.x >= 0 ? Random.Range(-5f, 0f) : Random.Range(0f, 5f);
                     item.velocity = new Vector2(xVelocity, yVelocity);
                 }
 
@@ -52,6 +38,7 @@ public class Spawner : MonoBehaviour
                 {
                     await new WaitForSeconds(item.delay);
                     var prefab = item.isBomb ? bomb : fruit;
+                    if (item.bombChance > Random.Range(1, 100)) prefab = bomb;
                     var go = Instantiate(prefab);
 
                     go.transform.position = new Vector3(item.x, -5, 0);

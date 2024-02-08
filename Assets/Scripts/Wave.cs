@@ -10,9 +10,9 @@ public class SpawnItemData
     public bool isBomb;
     public float x;
     public Vector2 velocity = new Vector2(0, 10f);
-    //randompos. randbomb, randveloc
+
     public bool isRandomPos;
-    public bool isRandomBomb;
+    public float bombChance;
     public bool isRandomVelocity;
 }
 
