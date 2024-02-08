@@ -5386,7 +5386,7 @@ MonoBehaviour:
       x: 0
       velocity: {x: 0, y: 10}
       isRandomPos: 0
-      isRandomBomb: 0
+      bombChance: 0
       isRandomVelocity: 0
   - items:
     - delay: 0
@@ -5394,72 +5394,324 @@ MonoBehaviour:
       x: 0
       velocity: {x: 0, y: 10}
       isRandomPos: 0
-      isRandomBomb: 0
+      bombChance: 0
       isRandomVelocity: 0
   - items:
-    - delay: 0
+    - delay: 0.25
       isBomb: 1
       x: 5
       velocity: {x: 2, y: 10}
       isRandomPos: 0
-      isRandomBomb: 0
+      bombChance: 0
+      isRandomVelocity: 0
+    - delay: 0
+      isBomb: 0
+      x: -2
+      velocity: {x: -1, y: 11}
+      isRandomPos: 0
+      bombChance: 0
+      isRandomVelocity: 0
+  - items:
+    - delay: 0
+      isBomb: 0
+      x: 0
+      velocity: {x: 2, y: 10}
+      isRandomPos: 1
+      bombChance: 20
+      isRandomVelocity: 0
+    - delay: 0.25
+      isBomb: 0
+      x: 1
+      velocity: {x: 0, y: 10}
+      isRandomPos: 0
+      bombChance: 0
+      isRandomVelocity: 1
+    - delay: 0
+      isBomb: 0
+      x: 0
+      velocity: {x: 0, y: 11}
+      isRandomPos: 1
+      bombChance: 0
+      isRandomVelocity: 0
+    - delay: 0
+      isBomb: 0
+      x: -2
+      velocity: {x: -1, y: 11}
+      isRandomPos: 0
+      bombChance: 0
+      isRandomVelocity: 0
+  - items:
+    - delay: 0
+      isBomb: 0
+      x: 0
+      velocity: {x: 0, y: 10}
+      isRandomPos: 1
+      bombChance: 20
+      isRandomVelocity: 0
+    - delay: 0.25
+      isBomb: 0
+      x: -3
+      velocity: {x: 3, y: 8}
+      isRandomPos: 0
+      bombChance: 20
+      isRandomVelocity: 0
+    - delay: 0
+      isBomb: 0
+      x: 2
+      velocity: {x: 0, y: 10}
+      isRandomPos: 0
+      bombChance: 20
+      isRandomVelocity: 1
+  - items:
+    - delay: 0
+      isBomb: 0
+      x: 3
+      velocity: {x: 0, y: 10}
+      isRandomPos: 0
+      bombChance: 0
+      isRandomVelocity: 0
+    - delay: 0.1
+      isBomb: 0
+      x: 0
+      velocity: {x: 0, y: 8}
+      isRandomPos: 1
+      bombChance: 0
+      isRandomVelocity: 0
+    - delay: 0.1
+      isBomb: 0
+      x: 4
+      velocity: {x: 0, y: 10}
+      isRandomPos: 0
+      bombChance: 0
+      isRandomVelocity: 1
+    - delay: 0.25
+      isBomb: 0
+      x: 2
+      velocity: {x: 0, y: 10}
+      isRandomPos: 0
+      bombChance: 20
+      isRandomVelocity: 0
+    - delay: 0.1
+      isBomb: 0
+      x: -1
+      velocity: {x: 0, y: 8}
+      isRandomPos: 0
+      bombChance: 0
+      isRandomVelocity: 0
+    - delay: 0.1
+      isBomb: 0
+      x: 0
+      velocity: {x: 0, y: 11}
+      isRandomPos: 0
+      bombChance: 0
+      isRandomVelocity: 0
+  - items:
+    - delay: 0
+      isBomb: 0
+      x: 0
+      velocity: {x: 1, y: 10}
+      isRandomPos: 0
+      bombChance: 0
+      isRandomVelocity: 0
+    - delay: 0
+      isBomb: 0
+      x: 0.5
+      velocity: {x: -1, y: 11}
+      isRandomPos: 1
+      bombChance: 0
+      isRandomVelocity: 0
+    - delay: 0
+      isBomb: 0
+      x: 1
+      velocity: {x: 0, y: 0}
+      isRandomPos: 0
+      bombChance: 0
+      isRandomVelocity: 1
+    - delay: 0
+      isBomb: 0
+      x: 1.5
+      velocity: {x: -2, y: 12}
+      isRandomPos: 0
+      bombChance: 20
+      isRandomVelocity: 0
+    - delay: 0
+      isBomb: 0
+      x: 0.5
+      velocity: {x: 2, y: 8}
+      isRandomPos: 0
+      bombChance: 0
+      isRandomVelocity: 0
+    - delay: 0
+      isBomb: 0
+      x: 2
+      velocity: {x: 0, y: 10}
+      isRandomPos: 0
+      bombChance: 0
+      isRandomVelocity: 0
+    - delay: 0.25
+      isBomb: 0
+      x: 1.5
+      velocity: {x: 0, y: 8}
+      isRandomPos: 1
+      bombChance: 0
+      isRandomVelocity: 1
+  - items:
+    - delay: 0
+      isBomb: 1
+      x: 3
+      velocity: {x: 0, y: 10}
+      isRandomPos: 1
+      bombChance: 0
+      isRandomVelocity: 1
+    - delay: 0.1
+      isBomb: 1
+      x: 0
+      velocity: {x: 0, y: 10}
+      isRandomPos: 1
+      bombChance: 0
+      isRandomVelocity: 1
+    - delay: 0.1
+      isBomb: 0
+      x: 4
+      velocity: {x: 0, y: 10}
+      isRandomPos: 1
+      bombChance: 25
+      isRandomVelocity: 1
+  - items:
+    - delay: 0
+      isBomb: 1
+      x: 1
+      velocity: {x: 0, y: 11}
+      isRandomPos: 0
+      bombChance: 0
       isRandomVelocity: 0
     - delay: 0
       isBomb: 0
       x: 0
-      velocity: {x: 3, y: 10}
+      velocity: {x: 0, y: 10}
       isRandomPos: 0
-      isRandomBomb: 0
+      bombChance: 0
+      isRandomVelocity: 0
+    - delay: 0
+      isBomb: 1
+      x: -1
+      velocity: {x: 0, y: 8}
+      isRandomPos: 0
+      bombChance: 0
+      isRandomVelocity: 0
+    - delay: 0.25
+      isBomb: 0
+      x: 2
+      velocity: {x: 0, y: 10}
+      isRandomPos: 0
+      bombChance: 20
+      isRandomVelocity: 0
+    - delay: 0.1
+      isBomb: 0
+      x: -1
+      velocity: {x: 0, y: 11}
+      isRandomPos: 0
+      bombChance: 0
+      isRandomVelocity: 0
+    - delay: 0
+      isBomb: 0
+      x: 0
+      velocity: {x: 0, y: 10}
+      isRandomPos: 0
+      bombChance: 0
       isRandomVelocity: 0
   - items:
-    - delay: 0.5
+    - delay: 0.25
       isBomb: 0
       x: 0
-      velocity: {x: 3, y: 10}
+      velocity: {x: 0, y: 10}
       isRandomPos: 1
-      isRandomBomb: 1
+      bombChance: 0
       isRandomVelocity: 1
-    - delay: 0.5
+    - delay: 0.25
       isBomb: 0
       x: 0
-      velocity: {x: 3, y: 10}
+      velocity: {x: 1, y: 8}
       isRandomPos: 1
-      isRandomBomb: 1
+      bombChance: 20
+      isRandomVelocity: 0
+    - delay: 0.25
+      isBomb: 0
+      x: 0
+      velocity: {x: 0, y: 10}
+      isRandomPos: 1
+      bombChance: 0
+      isRandomVelocity: 0
+    - delay: 0.25
+      isBomb: 0
+      x: 0
+      velocity: {x: 1, y: 11}
+      isRandomPos: 1
+      bombChance: 20
+      isRandomVelocity: 0
+    - delay: 0.25
+      isBomb: 0
+      x: 0
+      velocity: {x: 0, y: 10}
+      isRandomPos: 1
+      bombChance: 0
       isRandomVelocity: 1
-    - delay: 0.5
+    - delay: 0.25
       isBomb: 0
       x: 0
-      velocity: {x: 3, y: 10}
+      velocity: {x: -1, y: 8}
       isRandomPos: 1
-      isRandomBomb: 1
+      bombChance: 0
+      isRandomVelocity: 0
+  - items:
+    - delay: 0.25
+      isBomb: 1
+      x: 0
+      velocity: {x: -3, y: 8}
+      isRandomPos: 1
+      bombChance: 0
+      isRandomVelocity: 0
+    - delay: 0.1
+      isBomb: 0
+      x: 0
+      velocity: {x: 0, y: 10}
+      isRandomPos: 1
+      bombChance: 20
       isRandomVelocity: 1
-    - delay: 0.5
-      isBomb: 0
+    - delay: 0.25
+      isBomb: 1
       x: 0
-      velocity: {x: 3, y: 10}
+      velocity: {x: 1, y: 10}
       isRandomPos: 1
-      isRandomBomb: 1
+      bombChance: 0
       isRandomVelocity: 1
-    - delay: 0.5
+    - delay: 0.1
       isBomb: 0
       x: 0
-      velocity: {x: 3, y: 10}
+      velocity: {x: 0, y: 8}
       isRandomPos: 1
-      isRandomBomb: 1
+      bombChance: 20
+      isRandomVelocity: 0
+    - delay: 0.25
+      isBomb: 1
+      x: 0
+      velocity: {x: 1, y: 10}
+      isRandomPos: 1
+      bombChance: 0
       isRandomVelocity: 1
-    - delay: 0.5
+    - delay: 0.1
       isBomb: 0
       x: 0
-      velocity: {x: 3, y: 10}
+      velocity: {x: 0, y: 10}
       isRandomPos: 1
-      isRandomBomb: 1
-      isRandomVelocity: 1
-    - delay: 0.5
+      bombChance: 0
+      isRandomVelocity: 0
+    - delay: 0.25
       isBomb: 0
       x: 0
-      velocity: {x: 3, y: 10}
+      velocity: {x: 0, y: 10}
       isRandomPos: 1
-      isRandomBomb: 1
+      bombChance: 20
       isRandomVelocity: 1
 --- !u!1 &2019056200
 GameObject:
