@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
+    public List<GameObject> fruitPrefabs;
     public GameObject bomb;
-    public GameObject fruit;
 
     public float spawnRate = 1f;
     public float bombChance = 20f;
@@ -37,7 +37,7 @@ public class Spawner : MonoBehaviour
                 for (int i = 0; i < 1; i++)
                 {
                     await new WaitForSeconds(item.delay);
-                    var prefab = item.isBomb ? bomb : fruit;
+                    var prefab = item.isBomb ? bomb : fruitPrefabs[Random.Range(0, fruitPrefabs.Count)];
                     if (item.bombChance > Random.Range(1, 100)) prefab = bomb;
                     var go = Instantiate(prefab);
 

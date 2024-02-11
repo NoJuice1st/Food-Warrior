@@ -111,6 +111,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explodeParticles: {fileID: 2438015903356861374, guid: 65e1261d0ce7f7844a3399572b6f0dbd, type: 3}
+  leftSide: {fileID: 4817370153788120378}
+  rightSide: {fileID: 1253053891844425472}
+  juiceColor: {r: 0.23529413, g: 0.42352945, b: 0.3529412, a: 1}
+  missSound: {fileID: 8300000, guid: 874471c6eda1eed4aa259e2cfc435011, type: 3}
+  spawnSound: {fileID: 8300000, guid: 66d60676357b075419ae6f1a7457807e, type: 3}
+  sliceSound: {fileID: 8300000, guid: faf32607316e4cc4d8c944f12416772f, type: 3}
 --- !u!1001 &2135502483731249745
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -168,6 +174,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db62e5ef98b18814b9ae342bf3a11eae, type: 3}
+--- !u!1 &1253053891844425472 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: db62e5ef98b18814b9ae342bf3a11eae, type: 3}
+  m_PrefabInstance: {fileID: 2135502483731249745}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1884876620217359802 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: db62e5ef98b18814b9ae342bf3a11eae, type: 3}
@@ -230,6 +241,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db62e5ef98b18814b9ae342bf3a11eae, type: 3}
+--- !u!1 &4817370153788120378 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: db62e5ef98b18814b9ae342bf3a11eae, type: 3}
+  m_PrefabInstance: {fileID: 5628326837484593259}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5301137040466528128 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: db62e5ef98b18814b9ae342bf3a11eae, type: 3}
